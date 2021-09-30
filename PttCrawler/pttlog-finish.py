@@ -28,7 +28,7 @@ content="\n".join(no3_text) # 將換行加回去輸出就是正常內文
 with open("data.txt",mode="w",encoding="utf-8") as file:
     # file.write("作者: "+header[0].text+"\n"+"看板: "+header[1].text+"\n"+"標題: "+header[2].text+"\n"+"時間: "+header[3].text+"\n"+"\n"+content+"推文內容"+"\n")
     file.write("作者: "+author+"\n"+"看板: "+kanban+"\n"+"標題: "+title+"\n"+"時間: "+date+"\n"+"\n"+content+"推文內容"+"\n")
-    file.close
+    file.close()
 try:
     with open("data.txt",mode="a+",encoding="utf-8") as file:
         x=0
@@ -39,6 +39,6 @@ try:
             # else:
             #     file.write(tag[x].string+id[x].string+": "+msg[x].a.string+time[x].string) # 留言內容為網址、圖片等 包在a標籤內
             x+=1
-        file.close
+        file.close()
 except IndexError: # 排除tag[x]、id[x]、msg[x]、time[x]是空值的狀況
     pass
