@@ -62,4 +62,4 @@ try:
             x += 1
         file.close
 except IndexError: # 排除tag[x]、id[x]、msg[x]、time[x]是空值的狀況
-    pass
+    print("以下無新留言")
