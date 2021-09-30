@@ -52,7 +52,7 @@ def get_aligned_msg(msg):
 # 寫入記事本
 with open("data.txt", mode= "w",encoding= "utf-8") as file:
     file.write("作者: "+ author+ "\n"+ "看板: "+ kanban+ "\n"+ "標題: "+ title+ "\n"+ "時間: "+ date+ "\n"+ "\n"+ content+ "推文內容"+ "\n")
-    file.close
+    file.close()
 try:
     with open("data.txt", mode= "a+", encoding= "utf-8") as file:
         x = 0
@@ -60,6 +60,6 @@ try:
             print("{:<3}".format(tag[x].text), "{:<14}".format(id[x].text), get_aligned_msg(message[x].text), time[x].text.split("\n")[0])
             file.write("{:<3}".format(tag[x].text)+ "{:<14}".format(id[x].text)+ get_aligned_msg(message[x].text)+ time[x].text.split("\n")[0]+"\n")
             x += 1
-        file.close
+        file.close()
 except IndexError: # 排除tag[x]、id[x]、msg[x]、time[x]是空值的狀況
     print("以下無新留言")
