@@ -1,3 +1,3 @@
 # lyumin80224.github.io
-我的自學Python之路
-看著網路課程一步一步學習
+>一個初學Python及mysql的人
+>丟一些練習與自己寫的爬蟲
