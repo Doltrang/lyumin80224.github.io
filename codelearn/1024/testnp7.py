@@ -1,0 +1,10 @@
+import numpy as np
+nums = np.arange(1,7)
+nums = nums.reshape([2,3])
+print(nums)
+print(nums*2)
+print(nums-2)
+print(nums/2)
+print(nums//2)
+print(nums%2)
+print(nums**2)
