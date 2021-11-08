@@ -1,0 +1,6 @@
+USE mydb;
+#UPDATE aqx
+#SET PM25 = NULL
+#WHERE PM25 = "";
+SELECT * FROM mydb.aqx
+WHERE PM25 > 10;

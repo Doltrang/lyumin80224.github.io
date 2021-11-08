@@ -1,0 +1,1 @@
+select pi(),pow(2,10),sqrt(9),rand()
